@@ -1,6 +1,15 @@
+<?php
+    session_start();
+
+    // Check if the user is logged in and if their role is Landlord
+    if (!isset($_SESSION['email']) || !isset($_SESSION['role']) || $_SESSION['role'] !== 'Admin') {
+        // Redirect to login page or another appropriate page
+        header('Location: ../access_denied.php'); // Replace 'login.php' with the path to your login page
+        exit();
+    }
+?>
 
 <?php
-session_start();
 
 // include the database connection here
 include '../ConnectionDB/DbConnection.php';

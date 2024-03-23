@@ -11,6 +11,13 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="../Admin/newUser.php">New User <span class="sr-only">(current)</span></a>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../Admin/create_advertisement.php">Advertisement <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../Admin/editAdvert.php">Edit Advert <span class="sr-only">(current)</span></a>
+                </li>
+
             
             </ul>
             <ul class="navbar-nav ml-auto">
