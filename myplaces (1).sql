@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 03, 2024 at 07:43 PM
+-- Generation Time: Apr 04, 2024 at 05:12 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -20,6 +20,21 @@ SET time_zone = "+00:00";
 --
 -- Database: `myplaces`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `advertisements`
+--
+
+CREATE TABLE `advertisements` (
+  `title` varchar(1000) NOT NULL,
+  `description` varchar(1000) NOT NULL,
+  `image` varchar(1000) NOT NULL,
+  `start_date` varchar(1000) NOT NULL,
+  `end_date` varchar(1000) NOT NULL,
+  `id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -76,6 +91,12 @@ CREATE TABLE `users` (
 --
 
 --
+-- Indexes for table `advertisements`
+--
+ALTER TABLE `advertisements`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `place`
 --
 ALTER TABLE `place`
@@ -90,6 +111,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `advertisements`
+--
+ALTER TABLE `advertisements`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `place`
